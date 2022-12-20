@@ -1,3 +1,4 @@
-import concatArrays from './5-spread-operator.js';
+import taskBlock from './1-block-scoped.js';
 
-console.log(concatArrays(['a', 'b'], ['c', 'd'], 'Hello'));
+console.log(taskBlock(true));
+console.log(taskBlock(false));

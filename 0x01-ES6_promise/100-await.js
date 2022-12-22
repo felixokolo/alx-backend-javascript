@@ -8,11 +8,6 @@ export default async function asyncUploadUser() {
       photo: res[0].value,
       user: res[1].value,
     };
-  } else {
-    result = {
-      photo: 'null',
-      user: 'null',
-    };
   }
   return result;
 }

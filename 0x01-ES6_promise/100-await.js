@@ -10,8 +10,8 @@ export default async function asyncUploadUser() {
     };
   } else {
     result = {
-      photo: undefined,
-      user: undefined,
+      photo: 'null',
+      user: 'null',
     };
   }
   return result;

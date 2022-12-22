@@ -9,13 +9,13 @@ export default async function asyncUploadUser() {
         user: val[1],
       }))
       .catch(() => ({
-        photo: 'null',
-        user: 'null',
+        photo: null,
+        user: null,
       }));
   } catch (e) {
     result = {
-      photo: 'null',
-      user: 'null',
+      photo: null,
+      user: null,
     };
   }
   return result;

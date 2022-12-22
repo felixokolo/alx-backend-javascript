@@ -6,7 +6,7 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
     .then((values) => (
       values.map((val) => ({
         status: val.status,
-        value: val.value || val.reason.message,
+        value: val.value || val.reason,
       }))
     ));
 }

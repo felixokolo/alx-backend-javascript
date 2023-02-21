@@ -5,7 +5,7 @@ process.stdin.on("data", (data) => {
   console.log("Your name is: " + data);
 });
 
-process.on("SIGINT", () => {
+process.on("beforeExit", () => {
   console.log("This important software is now closing");
   process.exit(0);
 });

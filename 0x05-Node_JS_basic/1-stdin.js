@@ -1,6 +1,11 @@
-process.stdin.setEncoding('utf-8')
-s  = process.stdin.on('readable', () => {
-  let chunk = process.stdin.read();
-  console.log(chunk)
-})
-console.log(s)
+process.stdin.setEncoding("utf-8");
+console.log("Welcome to Holberton School, what is your name?");
+
+process.stdin.on("data", (data) => {
+  console.log("Your name is: " + data);
+});
+
+process.on("SIGINT", () => {
+  console.log("This important software is now closing");
+  process.exit(0);
+});
